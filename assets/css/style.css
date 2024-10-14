@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'open sans', sans-serif;
+}
+.contacts::-webkit-scrollbar {
+    width: 8px;
+}
+.contacts::-webkit-scrollbar-thumb {
+    background-color: #BEC1BB;
+    border-radius: 20px;
+}
+.container {
+    display: flex;
+}
+.list-contact {
+    height: 99vh;
+    width: 20vw;
+}
+.personal-info {
+    height: 12vh;    
+    width: 20vw;
+    border-bottom: 1px solid #BEC1BB;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.data-info {
+    display: flex;
+    gap: 10px;
+    
+    & img {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        padding: 0.3em;
+        margin-left: 15px;
+    }
+    & span {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    & h4 {
+        font-weight: 600;
+        opacity: 0.7;
+        margin: 0;
+    }
+
+    & h6 {
+        margin: 0;
+        opacity: 0.5;
+    }
+}
+
+.icon {
+    display: flex;
+    gap: 15px;
+    margin-right: 25px;
+}
+.contacts {
+    height: 87vh;
+    overflow-y: auto;
+}
+.new-chat{
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & button {
+        background-color: #A491D2;
+        color: #fff;
+        width: 13vw;
+        height: 8vh;
+        border: none;
+        border-radius: 3px;
+        font-size: 1em;
+        cursor: pointer;
+    }
+}
+.contact{
+    height: 15vh;
+    border-top: 1px solid #BEC1BB;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+    & img {
+        width: 45px;
+        height: 45px;
+        border-radius: 100%;
+        padding: 0.3em;
+        margin-left: 15px;
+    }
+    & span {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    & h4 {
+        font-weight: 500;
+        margin: 0;
+    }
+
+    & p {
+        font-size: 0.9em;
+        opacity: 0.8;
+        margin: 0.2em 0;
+    }
+}
+.box-chat {
+    background-color: #E8EBE4;
+    height: 99vh;
+    width: 80vw;
+    border-left: 2px solid #BEC1BB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    & img {
+        height: 40vh;
+        border-radius: 10px;
+    }
+    & h1 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 3em;
+        margin: 15px 0 0 0;
+    }
+    & p {
+        margin: 10px 0;
+        font-size: 1.3em;
+    }
+}
